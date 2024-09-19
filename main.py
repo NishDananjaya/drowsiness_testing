@@ -63,7 +63,7 @@ while True:
 
 
             output_data = interpreter.get_tensor(output_details[0]['index'])
-            #print(output_data)
+            print(output_data)
             prediction = np.squeeze(output_data)
 
             #displaying results
