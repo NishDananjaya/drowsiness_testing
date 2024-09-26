@@ -24,6 +24,7 @@ def preprocess_image(frame, target_size):
     # Convert to RGB (OpenCV uses BGR by default)
     rgb = cv2.cvtColor(resized, cv2.COLOR_BGR2RGB)
     input_data = np.expand_dims(rgb, axis=0).astype(np.float32)
+    print(input_data)
     return input_data
 
 # Initialize the webcam
